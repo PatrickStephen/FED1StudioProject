@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Classes.html" />
+    <Content Include="Team.html" />
+    <Content Include="Contact.html" />
+    <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,10 +86,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Image.html\" />
-    <Folder Include="Index.html\" />
-    <Folder Include="Scripts.html\" />
-    <Folder Include="Style Sheets.html\" />
+    <Folder Include="Image\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Style-Sheets\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
