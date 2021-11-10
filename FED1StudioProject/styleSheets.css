@@ -1,6 +1,5 @@
 ﻿body {
     background-color: lightgray;
-        
     
  
 }
@@ -10,9 +9,6 @@ header {
 }
 main section h2 {
     color: rebeccapurple;
-}
-li{
-    font-style: italic;
 }
 .about p{
     font-style: italic;
