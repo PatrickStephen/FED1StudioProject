@@ -22,3 +22,13 @@ nav ul li {
 #contact{
     text-align: center;
 }
+#headerLogo {
+    background-image: url('../Image/bbq pit logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 110px;
+    padding: 2em;
+    background-position: 2% center;
+}
+header h1, header p{
+    margin: 7px 0 7px 115px;
+}
