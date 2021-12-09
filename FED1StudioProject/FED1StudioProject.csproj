@@ -67,9 +67,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Image\Annmarie Wiley.jpg" />
+    <Content Include="Image\bbq pit.jpg" />
+    <Content Include="Image\bbq rub.jpg" />
+    <Content Include="Image\bbq-favicon.ico" />
     <Content Include="Classes.html" />
     <Content Include="Image\bbq pit logo.jpg" />
+    <Content Include="Image\bbq_plater.jpg" />
+    <Content Include="Image\CaryBenjamin.jpg" />
+    <Content Include="Image\ChefSam.jpg" />
+    <Content Include="Image\ChefTom.jpg" />
+    <Content Include="Image\coal.jpg" />
+    <Content Include="Image\cuts of meat.jpg" />
+    <Content Include="Image\different fuel.jpg" />
+    <Content Include="Image\diff_cook_methods.jpg" />
+    <Content Include="Image\ElwinPhoebe.jpg" />
+    <Content Include="Image\food=happiness.jpg" />
+    <Content Include="Image\FreddyLeon.jpg" />
     <Content Include="Image\jon-tyson-kctt4tL1dkE-unsplash.jpg" />
+    <Content Include="Image\LizElyse.jpg" />
+    <Content Include="Image\MarvinKevin.jpg" />
+    <Content Include="Image\MikeChen.jpg" />
+    <Content Include="Image\PhilBrown.jpg" />
+    <Content Include="Image\picnic_table.jpg" />
+    <Content Include="Image\smoke.jpg" />
+    <Content Include="Image\WesleyOrpha.jpg" />
+    <Content Include="Image\WileyMaxine.jpg" />
+    <Content Include="Style-Sheets\fontawesome.css" />
     <Content Include="Style-Sheets\stylesheets.css" />
     <Content Include="Team.html" />
     <Content Include="Index.html" />
@@ -89,6 +113,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Fonts\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>

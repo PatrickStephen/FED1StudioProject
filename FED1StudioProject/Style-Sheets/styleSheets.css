@@ -1,34 +1,312 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
+/*font-family: 'Shalimar', cursive;*/
+/*body {
     background-color: lightgray;
-    
- 
-}
-header {    
-    background-color: gray;
+}*/
+
+header h1, header p {
     color: orange;
+    margin: 7px 0 7px 115px;
 }
+
 main section h2 {
-    color: rebeccapurple;
+    color: rgb(79, 16, 113);
 }
-.about h2{
+
+
+.about h2 {
     font-style: italic;
 }
 
 nav ul li {
     display: inline-block;
-    padding: .4em 1em;
+    padding: .4em 1.5em;
+    background-color: rgb(53, 52, 52);
+    margin-top: .6%;
 }
 
-#contact{
+#contact {
     text-align: center;
 }
-#headerLogo {
+
+/*#headerLogo {
     background-image: url('../Image/bbq pit logo.jpg');
     background-repeat: no-repeat;
     background-size: 110px;
     padding: 2em;
     background-position: 2% center;
+}*/
+#logo {
+    width: 110px;
+    float: left
+       
 }
-header h1, header p{
-    margin: 7px 0 7px 115px;
+.clear{
+    clear: both;
+}
+
+#fontdemo {
+    font-family: 'Shalimar', cursive;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Shalimar', cursive;
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-left: 4em;
+}
+
+header {
+    /*background-image: url('../Image/smoke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    padding: 2em;
+}
+
+nav ul {
+    min-height: 52px;
+    background-image: url('../Image/coal.jpg');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 400px;
+    
+}
+
+footer {
+    text-align: center;
+}
+
+body {
+    background-image: url('../Image/smoke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgba(211,211,211,.3)
+}
+
+nav ul li a {
+    color: lightgray;
+    text-decoration: none;
+    display: block;
+}
+
+#imageGallery {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid;
+    border-color: black;
+    display: inline-block;
+    width: 235px;
+}
+
+    div.galleryItem:hover {
+        border: 1px solid rgb(79, 16, 113);        
+    }
+
+    div.galleryItem img {
+        width: 100%;
+        height: 180px;
+    }
+
+    div.galleryItem a:hover {
+        background-color: rgb(79, 16, 113);
+    }
+
+table {
+    border-collapse: collapse;
+    
+    background-color: gray;
+
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+#aboutUs{
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+#chooseUs {
+    float: right;
+    height: 150px;
+    width: 150px;
+    margin-right: 30px;
+}
+#aboutUsHeader{
+    text-align: left;
+}
+.aboutUs{
+    margin-right: 30px;
+}
+.chooseUs{
+    margin-left: 30px;
+}
+
+/*********************************************
+                STAFF
+**********************************************/
+
+#staff {
+    float: left;
+    width: 75%;
+    border-right: 1px solid black;
+    margin: unset;
+}
+.team {
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin-left: 2em;
+    margin-right: .8em;
+}
+
+/*********************************************
+                ASIDE
+**********************************************/
+
+#bydepartment {
+    float: right;
+    width: 18.2%;
+}
+
+
+/*********************************************
+                Hamburger Menu
+**********************************************/
+
+nav a.pull-right {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: none;
+    float: right;
+}
+
+/* Tips for Responsive Web Design (RWD)
+
+    -We need Viewport meta tag for the html document
+        - <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    - Widths as a %
+    - Font sizes as em (except the base font size
+    - Media Queries (represent the breakpoints for where new rules should apply)
+    - JavaScript Tweaks (usually for interactivity --- hamburger menus, side navs, modals, etc.)
+*/
+
+/*IF the viewport is below 850px, hide the menu items and display the hamburger button*/
+@media screen and (max-width: 850px) {
+
+    nav ul#nav-list {
+        display: none;
+    }
+
+    nav a.pull-right {
+        display: inline-block;
+    }
+
+    /* .explanded class is added to the #nav-list when the hamburger button is clicked.
+        This CSS will allow us to 'expand' the menu
+    */
+
+    nav ul#nav-list.expanded {
+        float: none;
+        clear: both;
+        display: block;
+    }
+
+        nav ul#nav-list.expanded li {
+            display: block;
+        }
+
+            nav ul#nav-list.expanded li a {
+                display: block;
+                text-align: center;
+                font-size: 1em;
+            }
+
+    nav li.dropdown ul.dropdown-menu {
+        width: 50%;
+        float: none;
+        margin: auto;
+        position: static;
+    }
+}
+
+
+
+/*********************************************
+            Side / Admin Navigation
+**********************************************/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: .5s;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(79, 16, 113);
+        display: block;
+        transition: .3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+.close-btn {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+.button {
+    font-family: sans-serif;
+    background: gray;
+    height: 100%;
+    width: 20px;
+    z-index: 1030;
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.vertical-text {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    writing-mode: vertical-rl;
+    color: rgb(79, 16, 113);
+    font-weight: bold;
 }

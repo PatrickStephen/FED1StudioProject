@@ -2,45 +2,213 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--added meta-->
     <title></title>
     <link href="Style-Sheets/stylesheets.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Image/bbq-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Image/bbq-favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div id="headerLogo">
+            <img src="Image/bbq pit logo.jpg" id="logo" />
             <h1>Stephen's Q'</h1>
             <p>The Best BBQ in Town!</p>
         </div>
     </header>
     <main>
-        <nav>
-            <ul>
+        <nav class="navbar-default navbar-fixed-top">
+
+            <!-- Hamburger Button -->
+            <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+                &#9776;
+
+            </a>
+            <!-- javascript:void(0) can be used to prevent an <a> tag from sending a request and reloading
+        the page, but it still allows the element to be clickable like an <a> tag would.
+        &#9776; produces a simple hamburger button -->
+
+            <ul class="topnav" id="nav-list">
                 <li>
                     <a href="/Index.html">Home</a>
                 </li>
                 <li>
-                    <a href="Classes.html">Classes.html</a>
+                    <a href="Classes.html">Classes</a>
                 </li>
                 <li>
-                    <a href="Team.html">Team.html</a>
+                    <a href="Team.html">Team</a>
                 </li>
                 <li>
-                    <a href="Contact.html">Contact.html</a>
+                    <a href="Contact.html">Contact</a>
                 </li>
             </ul>
 
         </nav>
-        <section class="about">
-            <h2>Meat the Team</h2>
+        <aside id="bydepartment">
+            <h1>
+                By Department
+            </h1>
             <ul>
-                <li>2 technical instructors, 1 technical instructor lead</li>
-                <li>2 sales people, 1 sales lead </li>
-                <li>2 administration and support staff, 1 operations lead</li>
-                <li>2 executive leadership, 1 company president  </li>
+                <li>
+                    <a href="#Leadership">Leadership</a>
+                </li>
+                <li>
+                    <a href="#Sales">Sales</a>
+                </li>
+                <li>
+                    <a href="#Administration">Administration</a>
+                </li>
+                <li>
+                    <a href="#Instructors">Instructors</a>
+                </li>
             </ul>
+        </aside>
+        <section class="about" id="staff">
+            <article>
+                <h2 id="Leadership">Leadership</h2>
+                <h3>Freddy Leon</h3>
+                <img class="team" src="Image/FreddyLeon.jpg" />
+                <p>
+                    Spent 2002-2007 deploying sausage in Cuba. Had moderate success licensing rubik's cubes in New York, NY. Enthusiastic about getting to know bacon in Cuba. Spent 2001-2005 writing about electric trains in the financial sector. Once had a dream of testing the market for psoriasis for no pay. Spent 2001-2007 consulting about jungle gyms in the financial sector.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Wesley Orpha</h3>
+                <img class="team" src="Image/WesleyOrpha.jpg" />
+                <p>
+                    Spent a year deploying sock monkeys with no outside help. Have some experience writing about crickets for the underprivileged. Spent the better part of the 90's testing the market for UFOs in Nigeria. Practiced in the art of creating marketing channels for mannequins in Africa. Spent a year developing birdhouses for fun and profit. Had some great experience marketing bullwhips in Minneapolis, MN.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Wiley Maxine</h3>
+                <img class="team" src="Image/WileyMaxine.jpg" />
+                <p>
+                    Spent college summers developing strategies for heroin in Libya. Spent childhood creating marketing channels for cabbage in Atlantic City, NJ. Once had a dream of building wooden tops for farmers. Was quite successful at marketing psoriasis in Suffolk, NY. Spent several years working on sock monkeys for fun and profit. Garnered an industry award while writing about hula hoops in the aftermarket.
+                </p>
+            </article>
+            <div class="clear"></div>
+
+            <article>
+                <h2 id="Sales">Sales</h2>
+                <h3>Liz Elyse</h3>
+                <img class="team" src="Image/LizElyse.jpg" />
+                <p>
+                    Won several awards for licensing g.i. joes in the UK. Have a strong interest in developing strategies for junk food for fun and profit. Spent 2002-2008 getting to know Uno in Prescott, AZ. Spoke at an international conference about merchandising action figures in Minneapolis, MN. Spoke at an international conference about merchandising barbie dolls in Mexico. Practiced in the art of getting my feet wet with shaving cream in Ohio
+                </p>
+                <div class="clear"></div>
+
+                <h3>Phil Bryon</h3>
+                <img class="team" src="Image/PhilBrown.jpg" />
+                <p>
+                    Won several awards for exporting carp for the underprivileged. Spent 2001-2006 testing the market for bacon in Fort Walton Beach, FL. Spent 2002-2009 analyzing toy elephants in Tampa, FL. Uniquely-equipped for investing in barbie dolls in Salisbury, MD. Spent 2001-2005 donating fried chicken in Prescott, AZ. Spent two years researching deodorant in the UK.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Marvin Kevin</h3>
+                <img class="team" src="Image/MarvinKevin.jpg" />
+                <p>
+                    Spent high school summers promoting yard waste in Washington, DC. Earned praise for short selling UFOs in Washington, DC. Enthusiastic about working on glucose in Phoenix, AZ. Spent several months creating marketing channels for trumpets in Naples, FL. Spent 2001-2007 supervising the production of licorice in Hanford, CA. At the moment I'm supervising the production of xylophones in Fort Walton Beach, FL.
+                </p>
+            </article>
+            <div class="clear"></div>
+
+            <article>
+                <h2 id="Administration">Administration</h2>
+                <h3>Cary Benjamin</h3>
+                <img class="team" src="Image/CaryBenjamin.jpg" />
+                <p>
+                    Enthusiastic about getting to know hugs in Deltona, FL. Earned praise for training teddy bears in Los Angeles, CA. Spoke at an international conference about getting to know jack-in-the-boxes in the aftermarket. Managed a small team researching Mr. Potato Heads in the government sector. Spent a weekend selling rocking horses in Jacksonville, FL. Managed a small team selling wooden horses in Deltona, FL.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Elwin Phoebe</h3>
+                <img class="team" src="Image/ElwinPhoebe.jpg" />
+                <p>
+                    Managed a small team building bathtub gin in Nigeria. My current pet project is merchandising dogmas on Wall Street. Spent the better part of the 90's supervising the production of frisbees in Fort Walton Beach, FL. At the moment I'm creating marketing channels for race cars in Gainesville, FL. Earned praised for my work getting my feet wet with teddy bears in Libya. Spent 2002-2010 investing in dust in New York, NY.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Annmarie Wiley</h3>
+                <img class="team" src="Image/Annmarie Wiley.jpg" />
+                <p>
+                    Developed several new methods for working with yogurt in Ohio. Uniquely-equipped for licensing circus clowns on Wall Street. Uniquely-equipped for deploying saliva in Cuba. Spent college summers analyzing toy planes in Fort Walton Beach, FL. Gifted in analyzing pogo sticks in the government sector. Spent 2002-2007 testing the market for g.i. joes in Orlando, FL.
+                </p>
+            </article>
+            <div class="clear"></div>
+
+            <article>
+
+                <h2 id="Instructors">Instructors</h2>
+                <h3>Mikey Chen</h3>
+                <img class="team" src="Image/MikeChen.jpg" />
+                <p>
+                    Chinese-American YouTuber who owns numerous popular channels including the insanely popular mystery and paranormal channel Beyond Science and the popular food channels Strictly Dumpling and Pho The Love of Food. He also shares the Asian culture channel The Chen Dynasty and posts travel vlogs to the channel Mikey Chen.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Chef Tom</h3>
+                <img class="team" src="Image/ChefTom.jpg" />
+                <p>
+                    All Things Barbecue staff chef Tom Jackson breaks down everything from simple kitchen tips and tricks to food science that helps up your barbecue game.
+                </p>
+                <div class="clear"></div>
+
+                <h3>Chef Sam</h3>
+                <img class="team" src="Image/ChefSam.jpg" />
+                <p>
+                    An everyday guy who has found a way to make cooking casually understandable. With no fancy equipment and by speaking English instead of ‘chef-speak,’ I’m sort of the everyman of cooking. I have two shows, my YouTube Channel, SAM THE COOKING GUY , and my online show, Sam the Cooking Guy Online. Both are shot right in my house  and I cook with my kids, just like we all do.
+                </p>
+            </article>
         </section>
+        <div class="clear"></div>
 
     </main>
     <footer>&copy;2021 - patrick-stephen.com </footer>
+    <!-- Button -->
+    <div id="admin-btn" class="button" onclick="openAdminNav()">
+        <span class="vertical-text">Classes</span>
+    </div>
+
+    <!-- Admin Nav -->
+    <div id="admin-nav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeAdminNav()">&times;</a>
+        <a href="Classes.html#classSchedule">Types of BBQ pits</a>
+        <a href="Classes.html#classSchedule">Types of Fuel</a>
+        <a href="Classes.html#classSchedule">Types of Meats</a>
+        <a href="Classes.html#classSchedule">Different Rubs</a>
+        <a href="Classes.html#classSchedule">Different Cooking Methods</a>
+        <a href="Classes.html#classSchedule">BBQ Time!</a>
+    </div>
+
+    <!-- Toggle Admin Menu -->
+    <script type="text/javascript">
+        function openAdminNav() {
+            document.getElementById('admin-btn').style.display = "none";
+            document.getElementById('admin-nav').style.width = "250px";
+        }
+
+        function closeAdminNav() {
+            document.getElementById('admin-btn').style.display = "block";
+            document.getElementById('admin-nav').style.width = "0";
+        }
+    </script>
+
+    <!-- Toggle Hamburger Menu -->
+    <script>
+        function toggleNav() {
+
+            let navList = document.getElementById('nav-list');
+            navList.classList.toggle('expanded');
+
+            let btnMenu = document.getElementById('menu-btn');
+            if (navList.classList.contains('expanded')) {
+                btnMenu.innerHTML = "&times;";
+            }
+            else {
+                btnMenu.innerHTML = "&#9776;";
+            }
+        }
+    </script>
+
 </body>
 </html>

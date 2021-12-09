@@ -2,51 +2,116 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--added meta-->
     <title></title>
     <link href="Style-Sheets/stylesheets.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Image/bbq-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Image/bbq-favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div id="headerLogo">
+            <img src="Image/bbq pit logo.jpg" id="logo" />
             <h1>Stephen's Q'</h1>
             <p>The Best BBQ in Town!</p>
         </div>
     </header>
     <main>
-        <nav>
-            <ul>
+        <nav class="navbar-default navbar-fixed-top">
+
+            <!-- Hamburger Button -->
+            <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+                &#9776;
+
+            </a>
+            <!-- javascript:void(0) can be used to prevent an <a> tag from sending a request and reloading
+            the page, but it still allows the element to be clickable like an <a> tag would.
+            &#9776; produces a simple hamburger button -->
+
+            <ul class="topnav" id="nav-list">
                 <li>
                     <a href="/Index.html">Home</a>
                 </li>
                 <li>
-                    <a href="Classes.html">Classes.html</a>
+                    <a href="Classes.html">Classes</a>
                 </li>
                 <li>
-                    <a href="Team.html">Team.html</a>
+                    <a href="Team.html">Team</a>
                 </li>
                 <li>
-                    <a href="Contact.html">Contact.html</a>
+                    <a href="Contact.html">Contact</a>
                 </li>
             </ul>
 
         </nav>
         <section class="about">
-            <h2>About Us</h2>
-            <p>
+            <img src="Image/food=happiness.jpg" id="aboutUs" />
+            <h2 id="aboutUsHeader">About Us</h2>
+            <p class="aboutUs">
                 We found a passion in BBQ that we hope to share with the world! We take pride in the quality of food we provide for the public and thought "What a better way to make people happy than to show them how to provide this quality of food for them selfs?" That is when we started Stephen's Q'. We hope you enjoy your time learning with us but most importantly, enjoy the food you create!
-
-                <h2>Why Choose Us?</h2>
-            <p>
+            </p>
+            <h2 id="chooseUsHeader">Why Choose Us?</h2>
+            <img src="Image/picnic_table.jpg" id="chooseUs" />
+            <p class="chooseUs">
                 This school is about spreading happiness rather than making a profit. We started as a home cook who just enjoyed cooking for others. When we created a resturant we stuck to the same moto. That moto lead to us to creating a school so others with our passion can do the same with their friends and family.
             </p>
 
-            <h2>Class Subjects</h2>
+            <!--<h2>Class Subjects</h2>
             <p>
-                We will learn the different types of BBQ pits and fuels. The different cuts of meat and how each smoke effects there quality. We will cover the prep on meat such as the rub and sauces to baste / dip in. We will cover different cooking methods such as smoking and reverse searing. Finally, we will empliment all of these tecniques into making your own main entres!
-            </p>
+                We will learn the different types of BBQ pits and fuels. The different cuts of meat and how each smoke effects the quality. We will cover the prep on meat such as the rub and sauces to baste / dip in. We will cover different cooking methods such as smoking and reverse searing. Finally, we will empliment all of these tecniques into making your own main entres!
+            </p>-->
         </section>
+        <div class="clear"></div>
     </main>
     <footer>&copy;2021 - patrick-stephen.com </footer>
+
+    <!-- Button -->
+    <div id="admin-btn" class="button" onclick="openAdminNav()">
+        <span class="vertical-text">Classes</span>
+    </div>
+
+    <!-- Admin Nav -->
+    <div id="admin-nav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeAdminNav()">&times;</a>
+        <a href="Classes.html#classSchedule">Types of BBQ pits</a>
+        <a href="Classes.html#classSchedule">Types of Fuel</a>
+        <a href="Classes.html#classSchedule">Types of Meats</a>
+        <a href="Classes.html#classSchedule">Different Rubs</a>
+        <a href="Classes.html#classSchedule">Different Cooking Methods</a>
+        <a href="Classes.html#classSchedule">BBQ Time!</a>
+    </div>
+
+    <!-- Toggle Admin Menu -->
+    <script type="text/javascript">
+        function openAdminNav() {
+            document.getElementById('admin-btn').style.display = "none";
+            document.getElementById('admin-nav').style.width = "250px";
+        }
+
+        function closeAdminNav() {
+            document.getElementById('admin-btn').style.display = "block";
+            document.getElementById('admin-nav').style.width = "0";
+        }
+    </script>
+
+
+
+    <!-- Toggle Hamburger Menu -->
+    <script>
+        function toggleNav() {
+
+            let navList = document.getElementById('nav-list');
+            navList.classList.toggle('expanded');
+
+            let btnMenu = document.getElementById('menu-btn');
+            if (navList.classList.contains('expanded')) {
+                btnMenu.innerHTML = "&times;";
+            }
+            else {
+                btnMenu.innerHTML = "&#9776;";
+            }
+        }
+    </script>
 
 </body>
 </html>

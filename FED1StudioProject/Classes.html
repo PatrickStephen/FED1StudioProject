@@ -2,46 +2,207 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--added meta-->
     <title></title>
     <link href="Style-Sheets/stylesheets.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Image/bbq-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Image/bbq-favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div id="headerLogo">
+            <img src="Image/bbq pit logo.jpg" id="logo" />
             <h1>Stephen's Q'</h1>
             <p>The Best BBQ in Town!</p>
         </div>
     </header>
+    <div class="clear" />
     <main>
-        <nav>
-            <ul>
+        <nav class="navbar-default navbar-fixed-top">
+
+            <!-- Hamburger Button -->
+            <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+                &#9776;
+
+            </a>
+            <!-- javascript:void(0) can be used to prevent an <a> tag from sending a request and reloading
+            the page, but it still allows the element to be clickable like an <a> tag would.
+            &#9776; produces a simple hamburger button -->
+
+            <ul class="topnav" id="nav-list">
                 <li>
                     <a href="/Index.html">Home</a>
                 </li>
                 <li>
-                    <a href="Classes.html">Classes.html</a>
+                    <a href="Classes.html">Classes</a>
                 </li>
                 <li>
-                    <a href="Team.html">Team.html</a>
+                    <a href="Team.html">Team</a>
                 </li>
                 <li>
-                    <a href="Contact.html">Contact.html</a>
+                    <a href="Contact.html">Contact</a>
                 </li>
             </ul>
 
         </nav>
-        <section class="about">
+        <section class="about" id="imageGallery">
             <h2>The Classes We Offer</h2>
-            <ul>
-                <li>Class 1</li>
-                <li>Class 2</li>
-                <li>Class 3</li>
-                <li>Class 4</li>
-                <li>Class 5</li>
-                <li>Class 6</li>
-            </ul>
+            <div class="galleryRow">
+                <div class="galleryItem">
+
+                    <a href="../Image/bbq pit.jpg" target="_blank">
+                        <img src="Image/bbq pit.jpg"
+                             alt="Off-set smoker set-up in a yard with smoke coming out of it"
+                             title="Off-set smoker" width="600" height="400" />
+                    </a>
+                    <div class="description">Learning the different types of BBQ pits and their uses!</div>
+                </div>
+
+                <div class="galleryItem">
+                    <a href="Image/different fuel.jpg" target="_blank">
+                        <img src="Image/different fuel.jpg"
+                             alt="Pile of lump charcoal"
+                             title="Lump Charcoal" width="600" height="400" />
+                    </a>
+                    <div class="description">Talking about the different types of fuels.</div>
+                </div>
+
+                <div class="galleryItem">
+                    <a href="Image/cuts of meat.jpg" target="_blank">
+                        <img src="Image/cuts of meat.jpg"
+                             alt="Chart on all the cuts of meat from a cow"
+                             title="Butcher Chart for a Cow" width="600" height="400" />
+                    </a>
+                    <div class="description">Discovering the wide variety of meats used in BBQ.</div>
+                </div>
+            </div>
+
+            <div class="galleryRow">
+                <div class="galleryItem">
+                    <a href="Image/bbq rub.jpg" target="_blank">
+                        <img src="Image/bbq rub.jpg"
+                             alt="Jar of BBQ Rub with a wooden spoon"
+                             title="Jar of BBQ Rub" width="600" height="400" />
+                    </a>
+                    <div class="description">We will cover the different types of rubs and sauces to baste/ dip with.</div>
+                </div>
+
+                <div class="galleryItem">
+                    <a href="Image/diff_cook_methods.jpg" target="_blank">
+                        <img src="Image/diff_cook_methods.jpg"
+                             alt="Off-set smoker on the left side of the screen, typical bbq pit on the right side of the screen"
+                             title="Off-set smoker vs Typical Bbq pit" width="600" height="400" />
+                    </a>
+                    <div class="description">We go into discussion on the different types of cooking methods.</div>
+
+                </div>
+                <div class="galleryItem">
+                    <a href="Image/bbq_plater.jpg" target="_blank">
+                        <img src="Image/bbq_plater.jpg"
+                             alt="plater filled with different cuts of meat and different side/condiments"
+                             title="Plater of Bbq" width="600" height="400" />
+                    </a>
+                    <div class="description">Finally, it's time to eat!</div>
+                    <br />
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Class Schedule</h2>
+            <table align="center" id="classSchedule">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Instructor</th>
+                        <th>Meets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Types of BBQ pits</td>
+                        <td>Chef Tom</td>
+                        <td>M 8am-11am</td>
+                    </tr>
+                    <tr>
+                        <td>Types of Fuel</td>
+                        <td>Chef Tom</td>
+                        <td>M 12pm-3pm</td>
+                    </tr>
+                    <tr>
+                        <td>Types of Meats</td>
+                        <td>Chef Sam</td>
+                        <td>W 8am-11am</td>
+                    </tr>
+                    <tr>
+                        <td>Different Rubs</td>
+                        <td>Chef Sam</td>
+                        <td>W 12pm-3pm</td>
+                    </tr>
+                    <tr>
+                        <td>Different Cooking Methods</td>
+                        <td>Chef Chen</td>
+                        <td>Th 8am-12pm</td>
+                    </tr>
+                    <tr>
+                        <td>BBQ Time!</td>
+                        <td>Chef Chen</td>
+                        <td>F 8am-3pm</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
-    <footer>&copy;2021 - patrick-stephen.com </footer>
+    <footer>
+        &copy;2021 - patrick-stephen.com <br />
+        <a href="#"
+    </footer>
+    <!-- Button -->
+    <div id="admin-btn" class="button" onclick="openAdminNav()">
+        <span class="vertical-text">Classes</span>
+    </div>
+
+    <!-- Admin Nav -->
+    <div id="admin-nav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeAdminNav()">&times;</a>
+        <a href="#classSchedule">Types of BBQ pits</a>
+        <a href="#classSchedule">Types of Fuel</a>
+        <a href="#classSchedule">Types of Meats</a>
+        <a href="#classSchedule">Different Rubs</a>
+        <a href="#classSchedule">Different Cooking Methods</a>
+        <a href="#classSchedule">BBQ Time!</a>
+    </div>
+
+    <!-- Toggle Admin Menu -->
+    <script type="text/javascript">
+        function openAdminNav() {
+            document.getElementById('admin-btn').style.display = "none";
+            document.getElementById('admin-nav').style.width = "250px";
+        }
+
+        function closeAdminNav() {
+            document.getElementById('admin-btn').style.display = "block";
+            document.getElementById('admin-nav').style.width = "0";
+        }
+    </script>
+
+    <!-- Toggle Hamburger Menu -->
+    <script>
+        function toggleNav() {
+
+            let navList = document.getElementById('nav-list');
+            navList.classList.toggle('expanded');
+
+            let btnMenu = document.getElementById('menu-btn');
+            if (navList.classList.contains('expanded')) {
+                btnMenu.innerHTML = "&times;";
+            }
+            else {
+                btnMenu.innerHTML = "&#9776;";
+            }
+        }
+    </script>
+
 </body>
 </html>
