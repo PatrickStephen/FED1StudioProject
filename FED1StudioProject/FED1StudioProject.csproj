@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Image\Annmarie Wiley.jpg" />
     <Content Include="Image\bbq pit.jpg" />
+    <Content Include="Image\BBQ Reward.jpg" />
     <Content Include="Image\bbq rub.jpg" />
     <Content Include="Image\bbq-favicon.ico" />
     <Content Include="Classes.html" />
