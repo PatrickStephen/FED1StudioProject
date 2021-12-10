@@ -138,6 +138,19 @@ td, th {
     padding: 0.5rem;
     text-align: left;
 }
+th{
+    color: white;
+    background-color: black;
+}
+td {
+    color: orange;
+    background-color: grey;
+}
+tbody tr:nth-last-child(even){
+    background-color: dimgrey;
+}
+
+
 #aboutUs{
     float: left;
     height: 150px;
